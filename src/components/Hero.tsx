@@ -37,6 +37,11 @@ const Hero = () => {
         <div className="grid md:grid-cols-12 gap-12 items-center">
           <div className="md:col-span-7 space-y-6">
             <div className="flex items-center space-x-2 mb-4">
+              <img 
+                src="https://mlsaxiet.netlify.app/assets/logo-D_oYnY7j.png" 
+                alt="MLSAXIET Logo" 
+                className="h-12 w-auto"
+              />
               <div className="h-px w-12 bg-primary"></div>
               <span className="text-sm uppercase tracking-widest font-medium">Technical Excellence</span>
             </div>
@@ -63,7 +68,7 @@ const Hero = () => {
               
               <a 
                 href="#contact" 
-                className="inline-flex items-center py-3 px-6 ml-4 border border-primary/20 rounded-full transition-all duration-300 hover:border-primary/40"
+                className="inline-flex items-center py-3 px-6 ml-8 border border-primary/20 rounded-full transition-all duration-300 hover:border-primary/40"
               >
                 Get in touch
               </a>
@@ -80,9 +85,9 @@ const Hero = () => {
               
               <div className="aspect-[4/3] rounded-lg overflow-hidden">
                 <img 
-                  src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2670&q=80" 
-                  alt="Technical workspace" 
-                  className="w-full h-full object-cover"
+                  src="https://mlsaxiet.netlify.app/assets/logo-D_oYnY7j.png" 
+                  alt="MLSAXIET Logo" 
+                  className="w-full h-full object-contain p-6"
                 />
               </div>
             </div>
