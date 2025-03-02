@@ -1,16 +1,16 @@
-
 import React from 'react';
-import { Facebook, Twitter, Instagram, Linkedin, Github } from 'lucide-react';
+import { Instagram, Link, Linkedin,  MessageCircleCode, link} from 'lucide-react';
+import { useTheme } from './ThemeProvider';
 
 const Footer = () => {
+  const { theme } = useTheme();
   const currentYear = new Date().getFullYear();
   
   const socialLinks = [
-    { icon: <Facebook className="h-5 w-5" />, url: '#' },
-    { icon: <Twitter className="h-5 w-5" />, url: '#' },
-    { icon: <Instagram className="h-5 w-5" />, url: '#' },
-    { icon: <Linkedin className="h-5 w-5" />, url: '#' },
-    { icon: <Github className="h-5 w-5" />, url: '#' }
+    { icon: <Instagram className="h-5 w-5" />, url: 'https://www.instagram.com/mlsaxiet?igsh=ZXo2eHFvN2ZwYnlv' },
+    { icon: <Linkedin className="h-5 w-5" />, url: 'https://www.linkedin.com/company/mlsa-xiet-community/' },
+    { icon: <MessageCircleCode className="h-5 w-5" />, url: 'https://chat.whatsapp.com/DXjoWMoEPsfBeCrVtBJNqc' },
+    { icon: <Link className="h-5 w-5" />, url: 'https://linktr.ee/Events_INFO' }
   ];
   
   const footerLinks = [
@@ -18,46 +18,26 @@ const Footer = () => {
       title: 'Company',
       links: [
         { label: 'About', url: '#about' },
-        { label: 'Services', url: '#services' },
-        { label: 'Portfolio', url: '#portfolio' },
-        { label: 'Careers', url: '#' },
+        { label: 'Modules', url: '#modules' },
+        { label: 'Process', url: '#process' },
         { label: 'Contact', url: '#contact' }
       ]
     },
-    {
-      title: 'Services',
-      links: [
-        { label: 'Web Development', url: '#' },
-        { label: 'Mobile Development', url: '#' },
-        { label: 'Technical Documentation', url: '#' },
-        { label: 'Localization', url: '#' },
-        { label: 'System Modernization', url: '#' }
-      ]
-    },
-    {
-      title: 'Resources',
-      links: [
-        { label: 'Blog', url: '#' },
-        { label: 'Case Studies', url: '#' },
-        { label: 'Testimonials', url: '#' },
-        { label: 'Privacy Policy', url: '#' },
-        { label: 'Terms of Service', url: '#' }
-      ]
-    }
+    
   ];
 
   return (
-    <footer className="bg-primary dark:bg-black border-t dark:border-white/10 text-primary-foreground pt-20 pb-8">
+    <footer className={`bg-primary dark:bg-black border-t dark:border-white/10 text-primary-foreground pt-20 pb-8`}>
       <div className="container mx-auto px-6">
         <div className="grid md:grid-cols-2 lg:grid-cols-5 gap-12 mb-16">
           <div className="lg:col-span-2">
-            <a href="/" className="text-2xl font-display font-bold mb-4 inline-block">
-              L7 Studio
+            <a href="/" className={`text-2xl font-display font-bold mb-4 inline-block ${theme === 'dark' ? 'text-white' : 'text-primary-foreground/80'}`}>
+              MLSA XIET
             </a>
-            <p className="text-primary-foreground/80 mb-6 max-w-md">
-              We're a team of technical experts passionate about creating exceptional digital experiences that solve complex challenges and drive business growth.
+            <p className={`mb-6 max-w-md ${theme === 'dark' ? 'text-white' : 'text-primary-foreground/80'}`}>
+            We inspire young minds through events, workshops, and community projects, fostering innovation and excellence under the MLSA legacy.
             </p>
-            <div className="flex space-x-4">
+            <div className={`flex space-x-4 ${theme === 'dark' ? 'text-white' : 'text-primary-foreground/80'}`}>
               {socialLinks.map((link, index) => (
                 <a 
                   key={index} 
@@ -70,15 +50,16 @@ const Footer = () => {
             </div>
           </div>
           
+          
           {footerLinks.map((column, index) => (
             <div key={index}>
-              <h4 className="text-lg font-bold mb-4">{column.title}</h4>
+              <h4 className={`text-lg font-bold mb-4 ${theme === 'dark' ? 'text-white' : 'text-primary-foreground'}`}>{column.title}</h4>
               <ul className="space-y-2">
                 {column.links.map((link, linkIndex) => (
                   <li key={linkIndex}>
                     <a 
                       href={link.url} 
-                      className="text-primary-foreground/80 hover:text-primary-foreground transition-colors duration-300"
+                      className={`hover:text-primary-foreground transition-colors duration-300 ${theme === 'dark' ? 'text-white' : 'text-primary-foreground/80'}`}
                     >
                       {link.label}
                     </a>
@@ -87,20 +68,34 @@ const Footer = () => {
               </ul>
             </div>
           ))}
+          <div className="relative bg-white  p-4 rounded-2xl shadow-2xl shadow-primary/5 animate-zoom-in opacity-0" style={{animationDelay: "0.5s", animationFillMode: "forwards"}}>
+              <div className="absolute -top-3 -left-3 w-6 h-6 bg-primary rounded-full"></div>
+              <div className="absolute -bottom-3 -right-3 w-6 h-6 bg-primary rounded-full"></div>
+              
+              <div className="aspect-[4/3] rounded-lg overflow-hidden">
+                <img 
+                  src="https://mlsaxiet.netlify.app/assets/logo-D_oYnY7j.png" 
+                  alt="MLSAXIET Logo" 
+                  className="w-full h-full object-contain p-6"
+                />
+              </div>
+            </div>
         </div>
+
+        
         
         <div className="border-t border-white/10 pt-8 flex flex-col md:flex-row items-center justify-between">
-          <p className="text-primary-foreground/80 text-sm">
-            &copy; {currentYear} L7 Studio. All rights reserved.
+          <p className={`text-sm ${theme === 'dark' ? 'text-white' : 'text-primary-foreground/80'}`}>
+            &copy; {currentYear} MLSA XIET. All rights reserved.
           </p>
           <div className="mt-4 md:mt-0 flex space-x-6">
-            <a href="#" className="text-primary-foreground/80 text-sm hover:text-primary-foreground transition-colors duration-300">
+            <a href="#" className={`text-sm hover:text-primary-foreground transition-colors duration-300 ${theme === 'dark' ? 'text-white' : 'text-primary-foreground/80'}`}>
               Privacy Policy
             </a>
-            <a href="#" className="text-primary-foreground/80 text-sm hover:text-primary-foreground transition-colors duration-300">
+            <a href="#" className={`text-sm hover:text-primary-foreground transition-colors duration-300 ${theme === 'dark' ? 'text-white' : 'text-primary-foreground/80'}`}>
               Terms of Service
             </a>
-            <a href="#" className="text-primary-foreground/80 text-sm hover:text-primary-foreground transition-colors duration-300">
+            <a href="#" className={`text-sm hover:text-primary-foreground transition-colors duration-300 ${theme === 'dark' ? 'text-white' : 'text-primary-foreground/80'}`}>
               Cookie Policy
             </a>
           </div>

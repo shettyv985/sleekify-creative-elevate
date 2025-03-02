@@ -50,8 +50,7 @@ const Hero = () => {
               ref={headingRef}
               className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-display font-bold leading-tight tracking-tight mb-6"
             >
-              Building Digital Solutions With Precision
-            </h1>
+              The Activity Zone</h1>
             
             <p className="text-lg md:text-xl text-muted-foreground max-w-md animate-fade-in opacity-0" style={{animationDelay: "0.8s", animationFillMode: "forwards"}}>
               We specialize in creating robust technical solutions through software development, documentation, and systems integration to drive your business forward.
@@ -62,7 +61,7 @@ const Hero = () => {
                 href="#portfolio" 
                 className="inline-flex items-center py-3 px-6 bg-primary text-primary-foreground rounded-full transition-all duration-300 hover:shadow-lg hover:shadow-primary/10 group"
               >
-                View our work
+                January 01-March31
                 <ArrowRight className="ml-2 h-4 w-4 transition-transform duration-300 group-hover:translate-x-1" />
               </a>
               
@@ -79,7 +78,7 @@ const Hero = () => {
             <div className="absolute -top-20 -right-20 w-64 h-64 bg-primary/5 rounded-full filter blur-3xl animate-float"></div>
             <div className="absolute -bottom-10 -left-10 w-40 h-40 bg-primary/10 rounded-full filter blur-2xl animate-float" style={{animationDelay: "2s"}}></div>
             
-            <div className="relative bg-white dark:bg-accent p-4 rounded-2xl shadow-2xl shadow-primary/5 animate-zoom-in opacity-0" style={{animationDelay: "0.5s", animationFillMode: "forwards"}}>
+            <div className="relative bg-white  p-4 rounded-2xl shadow-2xl shadow-primary/5 animate-zoom-in opacity-0" style={{animationDelay: "0.5s", animationFillMode: "forwards"}}>
               <div className="absolute -top-3 -left-3 w-6 h-6 bg-primary rounded-full"></div>
               <div className="absolute -bottom-3 -right-3 w-6 h-6 bg-primary rounded-full"></div>
               

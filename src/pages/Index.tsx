@@ -3,10 +3,11 @@ import React, { useEffect } from 'react';
 import Header from '../components/Header';
 import Hero from '../components/Hero';
 import About from '../components/About';
-import Services from '../components/Services';
-import Portfolio from '../components/Portfolio';
 import Contact from '../components/Contact';
 import Footer from '../components/Footer';
+import { Module } from 'module';
+import Modules from '../components/Modules';
+import Process from '../components/Process';
 
 const Index = () => {
   useEffect(() => {
@@ -43,8 +44,8 @@ const Index = () => {
       <main>
         <Hero />
         <About />
-        <Services />
-        <Portfolio />
+        <Modules />
+        <Process />
         <Contact />
       </main>
       <Footer />

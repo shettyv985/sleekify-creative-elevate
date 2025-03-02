@@ -45,23 +45,23 @@ const About = () => {
               </div>
               
               <h2 className="text-3xl md:text-4xl font-display font-bold leading-tight">
-                Technical experts solving complex challenges
+               Microsoft Learn Student Ambassadors XIET: Igniting Innovation
               </h2>
               
               <p className="text-muted-foreground text-lg">
-                Founded by experienced software engineers, we're a team of technical specialists passionate about creating efficient, scalable digital solutions. We combine deep technical knowledge with strategic thinking to help businesses overcome challenges and embrace innovation.
+              Led by Microsoft Learn Student Ambassadors, our technical club Microsoft Learn Student Ambassadors XIET on lighting a fire under zealous and spirited thinkers. Starting years back, we’ve been committed to serving the community. We regularly conduct events, organize workshops, technical talks, webinars, build community projects to develop young minds, and help them recognize and uncover their potential, under the esteemed name of the organization, to carry forth and express its legacy.
               </p>
             </div>
             
             <div className="grid sm:grid-cols-2 gap-8 mb-8">
               <div className="bg-secondary dark:bg-accent rounded-xl p-6 hover-lift">
                 <h3 className="text-xl font-bold mb-2">10+</h3>
-                <p className="text-muted-foreground">Years of technical expertise</p>
+                <p className="text-muted-foreground">Hackathons Conducted</p>
               </div>
               
               <div className="bg-secondary dark:bg-accent rounded-xl p-6 hover-lift">
-                <h3 className="text-xl font-bold mb-2">150+</h3>
-                <p className="text-muted-foreground">Projects completed</p>
+                <h3 className="text-xl font-bold mb-2">10+</h3>
+                <p className="text-muted-foreground">Webinars Organised</p>
               </div>
               
               <div className="bg-secondary dark:bg-accent rounded-xl p-6 hover-lift">
