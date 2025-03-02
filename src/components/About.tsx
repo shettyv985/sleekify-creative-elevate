@@ -5,28 +5,28 @@ import { CheckCircle } from 'lucide-react';
 const About = () => {
   const values = [
     {
-      title: "Craftsmanship",
-      description: "We believe in meticulous attention to detail and the pursuit of excellence in every project."
+      title: "Technical Excellence",
+      description: "We strive for the highest quality in every line of code and technical solution we deliver."
     },
     {
-      title: "Innovation",
-      description: "We constantly explore new technologies and creative approaches to solve complex problems."
+      title: "Continuous Learning",
+      description: "We constantly expand our knowledge to stay at the forefront of technology and innovation."
     },
     {
-      title: "Collaboration",
-      description: "We work closely with our clients to ensure their vision is realized to its fullest potential."
+      title: "Client Partnership",
+      description: "We work collaboratively with clients to ensure their technical needs and business goals align."
     }
   ];
 
   return (
-    <section id="about" className="section-padding bg-background relative overflow-hidden">
+    <section id="about" className="section-padding bg-background dark:bg-black relative overflow-hidden">
       <div className="container mx-auto px-6">
         <div className="grid md:grid-cols-12 gap-12 items-center">
           <div className="md:col-span-5 relative">
             <div className="relative">
               <div className="aspect-[3/4] rounded-2xl overflow-hidden shadow-2xl shadow-primary/5">
                 <img 
-                  src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2671&q=80" 
+                  src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2670&q=80" 
                   alt="Our team" 
                   className="w-full h-full object-cover"
                 />
@@ -45,33 +45,33 @@ const About = () => {
               </div>
               
               <h2 className="text-3xl md:text-4xl font-display font-bold leading-tight">
-                A passionate team of digital craftsmen
+                Technical experts solving complex challenges
               </h2>
               
               <p className="text-muted-foreground text-lg">
-                Founded in 2010, we're a team of designers, developers, and strategists who share a passion for creating exceptional digital experiences. We combine innovative thinking with technical expertise to help brands stand out in a crowded digital landscape.
+                Founded by experienced software engineers, we're a team of technical specialists passionate about creating efficient, scalable digital solutions. We combine deep technical knowledge with strategic thinking to help businesses overcome challenges and embrace innovation.
               </p>
             </div>
             
             <div className="grid sm:grid-cols-2 gap-8 mb-8">
-              <div className="bg-secondary rounded-xl p-6 hover-lift">
-                <h3 className="text-xl font-bold mb-2">12+</h3>
-                <p className="text-muted-foreground">Years of experience</p>
+              <div className="bg-secondary dark:bg-accent rounded-xl p-6 hover-lift">
+                <h3 className="text-xl font-bold mb-2">10+</h3>
+                <p className="text-muted-foreground">Years of technical expertise</p>
               </div>
               
-              <div className="bg-secondary rounded-xl p-6 hover-lift">
-                <h3 className="text-xl font-bold mb-2">200+</h3>
+              <div className="bg-secondary dark:bg-accent rounded-xl p-6 hover-lift">
+                <h3 className="text-xl font-bold mb-2">150+</h3>
                 <p className="text-muted-foreground">Projects completed</p>
               </div>
               
-              <div className="bg-secondary rounded-xl p-6 hover-lift">
-                <h3 className="text-xl font-bold mb-2">50+</h3>
-                <p className="text-muted-foreground">Team members</p>
+              <div className="bg-secondary dark:bg-accent rounded-xl p-6 hover-lift">
+                <h3 className="text-xl font-bold mb-2">15+</h3>
+                <p className="text-muted-foreground">Technologies mastered</p>
               </div>
               
-              <div className="bg-secondary rounded-xl p-6 hover-lift">
-                <h3 className="text-xl font-bold mb-2">15+</h3>
-                <p className="text-muted-foreground">Industry awards</p>
+              <div className="bg-secondary dark:bg-accent rounded-xl p-6 hover-lift">
+                <h3 className="text-xl font-bold mb-2">24/7</h3>
+                <p className="text-muted-foreground">Technical support</p>
               </div>
             </div>
             

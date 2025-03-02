@@ -7,53 +7,53 @@ const Portfolio = () => {
   
   const filters = [
     { id: 'all', label: 'All' },
-    { id: 'web', label: 'Web Design' },
+    { id: 'web', label: 'Web Apps' },
     { id: 'mobile', label: 'Mobile Apps' },
-    { id: 'branding', label: 'Branding' }
+    { id: 'docs', label: 'Documentation' }
   ];
   
   const projects = [
     {
       id: 1,
-      title: 'E-commerce Website Redesign',
+      title: 'Enterprise Healthcare Platform',
       category: 'web',
-      imageUrl: 'https://images.unsplash.com/photo-1520333789090-1afc82db536a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2671&q=80',
-      description: 'Complete overhaul of an e-commerce platform focusing on user experience and conversion optimization.'
+      imageUrl: 'https://images.unsplash.com/photo-1576091160550-2173dba999ef?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2670&q=80',
+      description: 'A comprehensive healthcare management system with patient records, billing, and telemedicine capabilities.'
     },
     {
       id: 2,
-      title: 'Health & Fitness Mobile App',
+      title: 'Fitness Tracking Mobile App',
       category: 'mobile',
       imageUrl: 'https://images.unsplash.com/photo-1555774698-0b77e0d5fac6?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2670&q=80',
-      description: 'A comprehensive fitness tracking application with personalized workout plans and nutrition guidance.'
+      description: 'An iOS and Android application for tracking workouts, nutrition, and health metrics with social features.'
     },
     {
       id: 3,
-      title: 'Luxury Brand Identity',
-      category: 'branding',
-      imageUrl: 'https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2564&q=80',
-      description: 'Developing a sophisticated brand identity for a high-end fashion retailer, including logo, typography, and brand guidelines.'
+      title: 'API Documentation Portal',
+      category: 'docs',
+      imageUrl: 'https://images.unsplash.com/photo-1519389950473-47ba0277781c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2670&q=80',
+      description: 'A comprehensive documentation portal for a payment processing API with interactive examples and SDKs.'
     },
     {
       id: 4,
-      title: 'Financial Services Platform',
+      title: 'Financial Analysis Dashboard',
       category: 'web',
       imageUrl: 'https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2670&q=80',
-      description: 'A secure, user-friendly platform for managing investments, tracking financial goals, and accessing financial advice.'
+      description: 'A data visualization platform for financial institutions with real-time analytics and reporting tools.'
     },
     {
       id: 5,
-      title: 'Travel Companion App',
+      title: 'Travel Planning Application',
       category: 'mobile',
       imageUrl: 'https://images.unsplash.com/photo-1512453979798-5ea266f8880c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2670&q=80',
-      description: 'An all-in-one travel application with itinerary planning, booking capabilities, and local recommendations.'
+      description: 'A cross-platform mobile app for planning trips, booking accommodations, and discovering local experiences.'
     },
     {
       id: 6,
-      title: 'Restaurant Brand Refresh',
-      category: 'branding',
-      imageUrl: 'https://images.unsplash.com/photo-1545239351-cefa43af60f3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2674&q=80',
-      description: 'Revitalizing the brand identity of a restaurant chain to attract a younger demographic while maintaining brand recognition.'
+      title: 'Technical Knowledge Base',
+      category: 'docs',
+      imageUrl: 'https://images.unsplash.com/photo-1516321318423-f06f85e504b3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2670&q=80',
+      description: 'A searchable knowledge base system for technical documentation with version control and multilingual support.'
     }
   ];
   
@@ -62,7 +62,7 @@ const Portfolio = () => {
     : projects.filter(project => project.category === activeFilter);
 
   return (
-    <section id="portfolio" className="section-padding bg-background">
+    <section id="portfolio" className="section-padding bg-background dark:bg-black">
       <div className="container mx-auto px-6">
         <div className="max-w-3xl mx-auto text-center mb-16">
           <div className="flex items-center justify-center space-x-2 mb-4">
@@ -72,11 +72,11 @@ const Portfolio = () => {
           </div>
           
           <h2 className="text-3xl md:text-4xl font-display font-bold mb-4">
-            Featured projects we're proud of
+            Technical Solutions That Drive Results
           </h2>
           
           <p className="text-muted-foreground text-lg">
-            Explore our portfolio of award-winning digital solutions that have helped our clients achieve their business objectives.
+            Explore our portfolio of custom digital solutions that have helped our clients overcome technical challenges and achieve their business objectives.
           </p>
           
           <div className="flex flex-wrap justify-center mt-8 mb-4 space-x-2">
@@ -87,7 +87,7 @@ const Portfolio = () => {
                 className={`px-5 py-2 rounded-full text-sm font-medium transition-all duration-300 ${
                   activeFilter === filter.id 
                     ? 'bg-primary text-primary-foreground shadow-md' 
-                    : 'bg-secondary hover:bg-secondary/80'
+                    : 'bg-secondary hover:bg-secondary/80 dark:bg-accent dark:hover:bg-accent/80'
                 }`}
               >
                 {filter.label}

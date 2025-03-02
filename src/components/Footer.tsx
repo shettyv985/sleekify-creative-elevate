@@ -27,11 +27,11 @@ const Footer = () => {
     {
       title: 'Services',
       links: [
-        { label: 'UI/UX Design', url: '#' },
         { label: 'Web Development', url: '#' },
         { label: 'Mobile Development', url: '#' },
-        { label: 'Digital Strategy', url: '#' },
-        { label: 'Brand Identity', url: '#' }
+        { label: 'Technical Documentation', url: '#' },
+        { label: 'Localization', url: '#' },
+        { label: 'System Modernization', url: '#' }
       ]
     },
     {
@@ -47,7 +47,7 @@ const Footer = () => {
   ];
 
   return (
-    <footer className="bg-primary text-primary-foreground pt-20 pb-8">
+    <footer className="bg-primary dark:bg-black border-t dark:border-white/10 text-primary-foreground pt-20 pb-8">
       <div className="container mx-auto px-6">
         <div className="grid md:grid-cols-2 lg:grid-cols-5 gap-12 mb-16">
           <div className="lg:col-span-2">
@@ -55,7 +55,7 @@ const Footer = () => {
               L7 Studio
             </a>
             <p className="text-primary-foreground/80 mb-6 max-w-md">
-              We're a team of designers, developers, and strategists passionate about creating exceptional digital experiences that drive business growth.
+              We're a team of technical experts passionate about creating exceptional digital experiences that solve complex challenges and drive business growth.
             </p>
             <div className="flex space-x-4">
               {socialLinks.map((link, index) => (

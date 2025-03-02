@@ -28,7 +28,7 @@ const Hero = () => {
   }, []);
 
   return (
-    <section className="relative min-h-screen flex items-center overflow-hidden bg-secondary">
+    <section className="relative min-h-screen flex items-center overflow-hidden bg-secondary dark:bg-black">
       <div className="absolute inset-0 z-0">
         <div className="absolute inset-0 bg-gradient-to-b from-background to-transparent opacity-80"></div>
       </div>
@@ -38,18 +38,18 @@ const Hero = () => {
           <div className="md:col-span-7 space-y-6">
             <div className="flex items-center space-x-2 mb-4">
               <div className="h-px w-12 bg-primary"></div>
-              <span className="text-sm uppercase tracking-widest font-medium">Premium Design Studio</span>
+              <span className="text-sm uppercase tracking-widest font-medium">Technical Excellence</span>
             </div>
             
             <h1 
               ref={headingRef}
               className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-display font-bold leading-tight tracking-tight mb-6"
             >
-              Crafting Digital Experiences with Precision
+              Building Digital Solutions With Precision
             </h1>
             
             <p className="text-lg md:text-xl text-muted-foreground max-w-md animate-fade-in opacity-0" style={{animationDelay: "0.8s", animationFillMode: "forwards"}}>
-              We combine innovative design with cutting-edge technology to create memorable digital experiences for forward-thinking brands.
+              We specialize in creating robust technical solutions through software development, documentation, and systems integration to drive your business forward.
             </p>
             
             <div className="pt-4 animate-fade-in opacity-0" style={{animationDelay: "1.2s", animationFillMode: "forwards"}}>
@@ -74,14 +74,14 @@ const Hero = () => {
             <div className="absolute -top-20 -right-20 w-64 h-64 bg-primary/5 rounded-full filter blur-3xl animate-float"></div>
             <div className="absolute -bottom-10 -left-10 w-40 h-40 bg-primary/10 rounded-full filter blur-2xl animate-float" style={{animationDelay: "2s"}}></div>
             
-            <div className="relative bg-white p-4 rounded-2xl shadow-2xl shadow-primary/5 animate-zoom-in opacity-0" style={{animationDelay: "0.5s", animationFillMode: "forwards"}}>
+            <div className="relative bg-white dark:bg-accent p-4 rounded-2xl shadow-2xl shadow-primary/5 animate-zoom-in opacity-0" style={{animationDelay: "0.5s", animationFillMode: "forwards"}}>
               <div className="absolute -top-3 -left-3 w-6 h-6 bg-primary rounded-full"></div>
               <div className="absolute -bottom-3 -right-3 w-6 h-6 bg-primary rounded-full"></div>
               
               <div className="aspect-[4/3] rounded-lg overflow-hidden">
                 <img 
-                  src="https://images.unsplash.com/photo-1593720213428-28a5b9e94613?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2670&q=80" 
-                  alt="Creative workspace" 
+                  src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2670&q=80" 
+                  alt="Technical workspace" 
                   className="w-full h-full object-cover"
                 />
               </div>

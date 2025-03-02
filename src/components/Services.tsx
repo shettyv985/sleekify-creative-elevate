@@ -6,51 +6,54 @@ import {
   Smartphone, 
   LineChart, 
   Lightbulb, 
-  ShieldCheck 
+  ShieldCheck,
+  FileText,
+  Clock,
+  Globe
 } from 'lucide-react';
 
 const Services = () => {
   const services = [
     {
-      icon: <Paintbrush className="h-8 w-8" />,
-      title: "UI/UX Design",
-      description: "We create intuitive, engaging interfaces that delight users and drive business results.",
-      color: "bg-blue-50"
-    },
-    {
       icon: <Code className="h-8 w-8" />,
       title: "Web Development",
-      description: "From simple websites to complex web applications, we build fast, scalable digital products.",
-      color: "bg-green-50"
+      description: "Full-stack development using modern technologies like React, Angular, Node.js, and more to create responsive, scalable web applications.",
+      color: "bg-blue-50 dark:bg-blue-950/30"
     },
     {
       icon: <Smartphone className="h-8 w-8" />,
       title: "Mobile Development",
-      description: "Native and cross-platform apps that deliver exceptional experiences across all devices.",
-      color: "bg-purple-50"
+      description: "Native and cross-platform app development for iOS and Android, delivering exceptional user experiences across all devices.",
+      color: "bg-green-50 dark:bg-green-950/30"
     },
     {
-      icon: <LineChart className="h-8 w-8" />,
-      title: "Digital Strategy",
-      description: "Data-driven strategies that align your digital presence with your business objectives.",
-      color: "bg-orange-50"
+      icon: <Paintbrush className="h-8 w-8" />,
+      title: "UI/UX Design",
+      description: "Creating intuitive, engaging interfaces with user-centered design principles that delight users and drive business results.",
+      color: "bg-purple-50 dark:bg-purple-950/30"
     },
     {
-      icon: <Lightbulb className="h-8 w-8" />,
-      title: "Brand Identity",
-      description: "We help you define and express your brand's unique personality and promise.",
-      color: "bg-red-50"
+      icon: <FileText className="h-8 w-8" />,
+      title: "Technical Documentation",
+      description: "Comprehensive, clear documentation for APIs, SDKs, and technical systems that helps users understand and implement complex technologies.",
+      color: "bg-orange-50 dark:bg-orange-950/30"
     },
     {
-      icon: <ShieldCheck className="h-8 w-8" />,
-      title: "Support & Maintenance",
-      description: "Ongoing support to ensure your digital products perform flawlessly at all times.",
-      color: "bg-teal-50"
+      icon: <Globe className="h-8 w-8" />,
+      title: "Localization",
+      description: "Professional translation and cultural adaptation services to help your products reach global markets effectively.",
+      color: "bg-red-50 dark:bg-red-950/30"
+    },
+    {
+      icon: <Clock className="h-8 w-8" />,
+      title: "Legacy System Modernization",
+      description: "Transforming outdated systems into modern, scalable applications while preserving business logic and data integrity.",
+      color: "bg-teal-50 dark:bg-teal-950/30"
     }
   ];
 
   return (
-    <section id="services" className="section-padding bg-secondary relative overflow-hidden">
+    <section id="services" className="section-padding bg-secondary dark:bg-black relative overflow-hidden">
       <div className="absolute inset-0 opacity-30 pointer-events-none">
         <div className="absolute top-0 left-0 w-full h-full bg-grid-pattern"></div>
       </div>
@@ -64,11 +67,11 @@ const Services = () => {
           </div>
           
           <h2 className="text-3xl md:text-4xl font-display font-bold mb-4">
-            Comprehensive solutions for your digital needs
+            Technical Excellence for Your Digital Needs
           </h2>
           
           <p className="text-muted-foreground text-lg">
-            We offer a full range of digital services to help you achieve your business goals, from strategy and design to development and ongoing support.
+            We deliver comprehensive technical solutions that transform ideas into robust, scalable digital products.
           </p>
         </div>
         
@@ -76,7 +79,7 @@ const Services = () => {
           {services.map((service, index) => (
             <div 
               key={index} 
-              className="bg-white rounded-2xl p-8 shadow-sm hover-lift"
+              className="bg-white dark:bg-accent rounded-2xl p-8 shadow-sm hover-lift"
             >
               <div className={`${service.color} w-16 h-16 rounded-xl flex items-center justify-center mb-6`}>
                 {service.icon}
@@ -88,14 +91,14 @@ const Services = () => {
           ))}
         </div>
         
-        <div className="mt-16 bg-primary/5 rounded-2xl p-8 md:p-12">
+        <div className="mt-16 bg-primary/5 dark:bg-white/5 rounded-2xl p-8 md:p-12">
           <div className="grid md:grid-cols-2 gap-8 items-center">
             <div>
               <h3 className="text-2xl md:text-3xl font-display font-bold mb-4">
-                Ready to start your project?
+                Ready to elevate your digital presence?
               </h3>
               <p className="text-muted-foreground mb-6">
-                Let's discuss how we can help you achieve your business goals with our comprehensive digital solutions.
+                Let's discuss how our technical expertise can help you achieve your business goals with innovative digital solutions.
               </p>
               <a 
                 href="#contact" 

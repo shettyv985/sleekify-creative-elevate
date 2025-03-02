@@ -2,10 +2,12 @@
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { Menu, X } from 'lucide-react';
+import { useTheme } from './ThemeProvider';
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
+  const { theme } = useTheme();
 
   const toggleMenu = () => setIsMenuOpen(!isMenuOpen);
   
@@ -29,7 +31,7 @@ const Header = () => {
 
   return (
     <header 
-      className={`fixed top-0 w-full z-50 transition-all duration-300 ${
+      className={`fixed top-0 w-full z-40 transition-all duration-300 ${
         scrolled ? 'glass py-4' : 'bg-transparent py-6'
       }`}
     >
@@ -75,7 +77,7 @@ const Header = () => {
       
       {/* Mobile Navigation */}
       <div
-        className={`fixed inset-0 bg-background z-40 flex flex-col justify-center p-8 transition-transform duration-300 ease-in-out md:hidden ${
+        className={`fixed inset-0 bg-background dark:bg-black z-30 flex flex-col justify-center p-8 transition-transform duration-300 ease-in-out md:hidden ${
           isMenuOpen ? 'translate-y-0' : '-translate-y-full'
         }`}
       >
